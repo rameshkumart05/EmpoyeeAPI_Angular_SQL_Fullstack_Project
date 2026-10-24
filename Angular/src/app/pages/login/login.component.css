@@ -1,0 +1,110 @@
+  .login-page {
+    min-height: 100vh;
+    background: #f1f4ef;
+  }
+
+  .login-shell {
+    width: min(1080px, 100%);
+    min-height: 640px;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 24px 70px rgba(24, 48, 39, 0.14);
+    animation: page-in 650ms ease-out both;
+  }
+
+  .login-story {
+    color: #f8f7ef;
+    background-color: #173f38;
+    background-image: repeating-linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.035) 0,
+      rgba(255, 255, 255, 0.035) 1px,
+      transparent 1px,
+      transparent 20px
+    );
+  }
+
+  .brand-mark {
+    display: inline-grid;
+    width: 42px;
+    height: 42px;
+    place-items: center;
+    border-radius: 10px;
+    color: #173f38;
+    background: #e9b86e;
+    font-weight: 800;
+  }
+
+  .story-label {
+    color: #e9b86e;
+    font-size: 0.76rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .login-panel {
+    background: #fff;
+  }
+
+  .login-content {
+    max-width: 390px;
+    animation: content-in 700ms 120ms ease-out both;
+  }
+
+  .login-control {
+    min-height: 50px;
+    border-color: #dce3dc;
+  }
+
+  .login-control:focus {
+    border-color: #397b68;
+    box-shadow: 0 0 0 0.2rem rgba(57, 123, 104, 0.16);
+  }
+
+  .login-button {
+    min-height: 50px;
+    border: 0;
+    color: #fff;
+    background: #c95d43;
+    font-weight: 700;
+  }
+
+  .login-button:hover {
+    color: #fff;
+    background: #ad4932;
+  }
+
+  .login-link {
+    color: #26725f;
+    text-decoration: none;
+  }
+
+  .login-link:hover {
+    text-decoration: underline;
+  }
+
+  @keyframes page-in {
+    from { opacity: 0; transform: translateY(14px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes content-in {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @media (max-width: 991.98px) {
+    .login-shell {
+      min-height: auto;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .login-shell,
+    .login-content {
+      animation: none;
+    }
+  }
+  

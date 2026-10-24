@@ -1,0 +1,11 @@
+Solution Explorer -> Goto-> Dependence ->Add Manage NuGetPackages (Browse) -> Search for the following packages
+Microsoft.EntityFrameworkCore.SqlServer
+Microsoft.EntityFrameworkCoree (9.0)
+Microsoft.AspNetCore.Authentication.JwtBearer (API Token - Authenication & authorize)
+
+
+
+
+// Run the API  (Getall)
+// https://localhost:7233/api/EmployeeMaster
+
